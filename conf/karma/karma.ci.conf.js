@@ -1,4 +1,4 @@
-var karmaFactory = require('./make-karma-config.js');
+var karmaFactory = require('./factory');
 
 module.exports = function(config) {
   config.set(karmaFactory({

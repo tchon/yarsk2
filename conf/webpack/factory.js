@@ -26,7 +26,7 @@ module.exports = function(options) {
   var jsLoaders = ['babel'];
 
   return {
-    entry: './app/index.jsx',
+    entry: './src/index.jsx',
     debug: !options.production,
     devtool: options.devtool,
     output: {
@@ -105,12 +105,12 @@ module.exports = function(options) {
       }),
       new ExtractTextPlugin("app.[hash].css"),
       new HtmlWebpackPlugin({
-        template: './conf/tmpl.html',
+        template: './conf/webpack/template.html',
         production: true,
       }),
     ] : [
       new HtmlWebpackPlugin({
-        template: './conf/tmpl.html',
+        template: './conf/webpack/template.html',
       }),
     ],
   };

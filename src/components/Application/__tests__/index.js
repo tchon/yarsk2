@@ -1,4 +1,5 @@
 import React from 'react/addons';
+
 import Application from '../index.jsx';
 import styles from '../style.sass';
 

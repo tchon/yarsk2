@@ -1,4 +1,5 @@
 import React from 'react/addons';
+
 import Header from '../index.jsx';
 import styles from '../style.sass';
 
@@ -13,6 +14,6 @@ describe('Header', function() {
     const title = TestUtils.findRenderedDOMComponentWithClass(header, styles.title);
     const dom = React.findDOMNode(title);
 
-    expect(dom.textContent).to.equal('YARSK');
+    expect(dom.textContent).to.equal('YARSK2');
   });
 });
